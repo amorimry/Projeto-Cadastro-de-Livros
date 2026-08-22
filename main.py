@@ -13,7 +13,7 @@ ctk.set_appearance_mode("dark")
 # CONFIG JANELA ---
 janela = ctk.CTk()
 janela.title("Cadastro de Livros")
-janela.geometry(f"900x580") # largura x altura
+janela.geometry(f"900x600") # largura x altura
 janela.maxsize(1000, 780)
 janela.minsize(600, 380)
 janela.attributes("-topmost", True) # sobrepor / true ou false
@@ -59,6 +59,21 @@ tabela.heading("Autor", text="Autor")
 tabela.pack(fill="both", padx=80, pady=20)
 
 
+# BOTÕES ---
+frame_botao = ctk.CTkFrame(janela, fg_color="transparent")
+frame_botao.pack(padx=35, pady=15)
 
 
+botao_adicionar = ctk.CTkButton(frame_botao, text="Adicionar")
+botao_adicionar.pack(padx=5, side="left")
+
+
+botao_editar = ctk.CTkButton(frame_botao, text="Editar")
+botao_editar.pack(padx=5, side="left")
+
+botao_excluir = ctk.CTkButton(frame_botao, text="Excluir", fg_color="#d9534f", hover_color="#c9302c")
+botao_excluir.pack(padx=5, side="left")
+
+
+# FIM ---
 janela.mainloop()
