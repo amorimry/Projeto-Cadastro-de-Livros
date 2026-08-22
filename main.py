@@ -13,7 +13,7 @@ ctk.set_appearance_mode("dark")
 # CONFIG JANELA ---
 janela = ctk.CTk()
 janela.title("Cadastro de Livros")
-janela.geometry(f"900x600") # largura x altura
+janela.geometry(f"700x600") # largura x altura
 janela.maxsize(1000, 780)
 janela.minsize(600, 380)
 janela.attributes("-topmost", True) # sobrepor / true ou false
