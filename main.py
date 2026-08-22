@@ -49,7 +49,14 @@ ano_entry.grid(row=5, column=0, padx=15)
 
 
 # TABELA ---
+colunas = ("Título", "Ano", "Autor")
+tabela = ttk.Treeview(janela, columns=colunas, show="headings") # show mostra só as colunas que eu tenho
 
+tabela.heading("Título", text="Título") # heading é de cabeçalho
+tabela.heading("Ano", text="Ano")
+tabela.heading("Autor", text="Autor")
+
+tabela.pack(fill="both", padx=80, pady=20)
 
 
 
